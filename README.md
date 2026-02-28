@@ -1,23 +1,19 @@
 <p align="center">
   
-  <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="CV Portfolio Banner" height="200" style="object-fit: cover; width: 100%;">
+  <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="CV Portfolio Banner" height="200" style="object-fit: cover; width: 100%;">
 </p>
 
 <h1 align="center">✨ Ajay Gangwar | Interactive CV Portfolio</h1>
   
 <p align="center">
     <a href="https://html.spec.whatwg.org/">
-      <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-    </a>
+      <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"></a>
     <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
-      <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-    </a>
+      <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"></a>
     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
-      <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
-    </a>
+      <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"></a>
     <a href="https://micku7zu.github.io/vanilla-tilt.js/">
-      <img src="https://img.shields.io/badge/VanillaTilt.js-222222?style=for-the-badge&logo=javascript&logoColor=white" alt="VanillaTilt">
-    </a>
+      <img src="https://img.shields.io/badge/VanillaTilt.js-222222?style=for-the-badge&logo=javascript&logoColor=white" alt="VanillaTilt"></a>
   </p>
 
 </div>
