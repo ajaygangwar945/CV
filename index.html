@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Portfolio</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Modern Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Boxicons for modern icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Animated Background Elements -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <!-- Optional particles overlay -->
+    <div class="particles"></div>
+
+    <main class="container">
+        <header class="hero">
+            <h1 class="glitch" data-text="Ajay Gangwar">Ajay Gangwar</h1>
+            <p class="subtitle">Interactive CV Portfolio</p>
+        </header>
+
+        <div class="cards-container">
+            <!-- Card 1: Main CV -->
+            <div class="card-wrapper custom-tilt">
+                <div class="card glass-effect">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="icon-wrapper">
+                            <i class='bx bxs-file-pdf'></i>
+                        </div>
+                        <h2>Standard CV</h2>
+                        <p>Comprehensive overview of my skills, experience, and academic background.</p>
+                        <div class="btn-group">
+                            <button class="view-btn" onclick="openModal('Ajay Gangwar CV.pdf')"><i
+                                    class='bx bx-show'></i> View</button>
+                            <a href="Ajay Gangwar CV.pdf" class="download-btn" download title="Download Standard CV"><i
+                                    class='bx bx-download'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Specialized CV -->
+            <div class="card-wrapper custom-tilt">
+                <div class="card glass-effect">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="icon-wrapper specialized-icon">
+                            <i class='bx bx-briefcase-alt-2'></i>
+                        </div>
+                        <h2>Specialized CV</h2>
+                        <p>Targeted resume highlighting specific core competencies and standout achievements.</p>
+                        <div class="btn-group">
+                            <button class="view-btn" onclick="openModal('Ajay Gangwar Specialized CV.pdf')"><i
+                                    class='bx bx-show'></i> View</button>
+                            <a href="Ajay Gangwar Specialized CV.pdf" class="download-btn" download
+                                title="Download Specialized CV"><i class='bx bx-download'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- CV Modal -->
+    <div id="cvModal" class="cv-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()"><i class='bx bx-x'></i></span>
+            <iframe id="cvIframe" src="" frameborder="0" title="CV Viewer"></iframe>
+        </div>
+    </div>
+
+    <!-- VanillaTilt.js for 3D interactions -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
+        integrity="sha512-wC/cunGGDjXSl9OHsu00/x5Z5x/zWv1oH1b9Qp/I9mQ1E2B7A/DAnzTjS2R51RIfH1/BfMBNpA0K7e7MGEP17g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
