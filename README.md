@@ -1,9 +1,9 @@
 <p align="center">
   
-  <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="CV Portfolio Banner" height="200" style="object-fit: cover; width: 100%;">
+  <img src="banner.png" alt="CV Portfolio Banner" height="200" style="object-fit: cover; width: 100%;">
 </p>
 
-<h1 align="center">✨ Ajay Gangwar | Interactive CV Portfolio</h1>
+<h1 align="center">✨Interactive CV Portfolio</h1>
   
 <p align="center">
     <a href="https://html.spec.whatwg.org/">
