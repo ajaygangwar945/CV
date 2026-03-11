@@ -1,0 +1,43 @@
+Project Analysis: Interactive CV Portfolio
+
+1. Project Overview
+This project is an interactive, modern, and visually appealing web-based CV (Curriculum Vitae) portfolio. It provides users with a platform to view and download two different versions of a resume: a Standard CV and a Specialized CV. The interface is designed with modern web trends such as dark mode, glassmorphism, 3D tilt effects, and animated background elements.
+
+2. Technologies & Libraries Used
+- HTML5: Used for the semantic structure of the webpage.
+- CSS3: Used for custom styling, responsive design (Flexbox & Grid), animations, glassmorphism filters, and variable management.
+- Vanilla JavaScript: Used to handle DOM manipulation, modal interactions, and mouse tracking for the glow effect.
+- VanillaTilt.js (External Library): A lightweight JavaScript library used to create smooth 3D tilt effects on the CV cards based on mouse movement.
+- Boxicons (External Library): A free, open-source icon set used to add modern icons for the PDF, briefcase, view, download, and close buttons.
+- Google Fonts (Outfit): Used for modern, clean typography across the webpage.
+
+3. Logic and Working of Components
+
+A. HTML Structure (index.html)
+- Head Section: Imports external resources like Google Fonts, Boxicons, and VanillaTilt.js. Connects the `styles.css` and sets the favicon image.
+- Background Elements: Contains three `div` elements (`.blob`) used purely for background animation and aesthetics.
+- Main Container: Houses the main hero title and the `cards-container` which uses CSS grid to align the CV cards.
+- CV Cards: Two main cards representing the "Standard CV" and "Specialized CV". Each card contains informational text, an icon, and a button group to either View or Download the corresponding PDF.
+- Modal Container: A hidden `div` containing an iframe (`#cvIframe`). This is used to display the selected PDF within the page without navigating away.
+
+B. Styling and Animations (styles.css)
+- CSS Variables: The `:root` selector defines the color palette (dark theme, primary text, purple/pink accents) allowing for global consistency.
+- Background Blobs: The background blobs are styled with absolute positioning, `filter: blur(80px)`, and `radial-gradient` colors. A `@keyframes float` animation is applied so they smoothly and randomly move around the background.
+- Glassmorphism: The main cards use `background: rgba(255, 255, 255, 0.03)` combined with `backdrop-filter: blur(12px)` to create a frosted glass effect sitting transparently over the animated background.
+- Glow Tracking Effect: A `.card-glow` element inside the cards relies on CSS variables (`--x` and `--y`) updated dynamically by JavaScript to move a radial-gradient ring precisely around the user's cursor position.
+- Responsive Design: Various media queries dynamically adjust grid layouts, padding, and font sizes to ensure the design looks good on mobile devices (screens smaller than 768px and 480px).
+
+C. JavaScript Logic (script.js)
+- VanillaTilt Initialization: Scans the DOM for elements with the `.custom-tilt` class and applies 3D tilt logic configurable options like max tilt and glare effect.
+- Mouse Tracking for Glow: An event listener (`mousemove`) is attached to each card. It calculates the mouse's X and Y coordinates relative to the card's boundaries and updates the custom CSS variables `--x` and `--y`. The CSS reads these variables to position the `.card-glow` element directly beneath the cursor.
+- Modal Logic:
+  - `openModal(pdfUrl)`: Retrieves the iframe element and updates its `src` attribute to the provided PDF URL. It then adds an `active` class to the modal (fading it in via CSS) and disables body scrolling by setting `overflow = 'hidden'`.
+  - `closeModal()`: Removes the `active` class to hide the modal. It executes a `setTimeout` function to delay clearing the iframe's `src` property until the fade-out CSS transition finishes, after which it restores body scrolling. An extra event listener is also set up allowing users to click outside the content area to trigger this function.
+
+4. Full Project Working (User Experience & Flow)
+1. The user lands on the page. The CSS immediately renders the animated background floating shapes and a clean glassmorphic UI.
+2. The user sees the two CV options. Hovering over either card triggers the VanillaTilt 3D effect which slightly angles the card towards the user's cursor, whilst the JavaScript tracks the cursor to project a colored glow effect inside the glass card.
+3. If the user clicks the "Download" button on a specific card, the browser immediately prompts the download of the targeted PDF file (due to the standard `<a>` tag `download` attribute).
+4. If the user clicks the "View" button, the `openModal()` function executes. The designated PDF file path is loaded into the hidden iframe, and the modal overlay gently fades in, locking the main page scroll to keep the user focused.
+5. The user can interact with the PDF viewer within the modal UI.
+6. When done, the user can click the modal's 'X' close button or click the darkened space outside the modal container. The `closeModal()` removes the active overlay and reinstates page scrolling, returning the user exactly to where they were.
