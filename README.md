@@ -56,6 +56,7 @@ To run this project locally, you don't need any complex build tools. Since it re
 ├── 📄 styles.css                       # Advanced CSS (glassmorphism, animations, responsive design)
 ├── 📄 script.js                        # Interactions (VanillaTilt init, custom mouse-tracking glow, modal logic)
 ├── 📄 favicon.png                      # Modern 3D document icon
+├── 📄 project_analysis.txt             # Detailed breakdown of the project logic and technologies
 ├── 📄 Ajay Gangwar CV.pdf              # Comprehensive resume
 └── 📄 Ajay Gangwar Specialized CV.pdf  # Targeted resume
 ```
