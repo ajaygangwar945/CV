@@ -3,7 +3,7 @@
   <img src="banner.png" alt="CV Portfolio Banner" height="200" style="object-fit: cover; width: 100%;">
 </p>
 
-<h1 align="center">✨Interactive CV Portfolio</h1>
+<h1 align="center">✨CV Portfolio</h1>
   
 <p align="center">
     <a href="https://html.spec.whatwg.org/">
